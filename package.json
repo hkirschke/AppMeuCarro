@@ -13,6 +13,7 @@
   "author": "Henrique Kirschke",
   "license": "ISC",
   "dependencies": {
+    "consign": "^0.1.6",
     "express": "^4.17.1"
   }
 }
