@@ -1,0 +1,18 @@
+{
+  "name": "appmeucarro",
+  "version": "1.0.0",
+  "description": "Trabalho pra TESI",
+  "main": "index.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "app-meu-carro"
+  },
+  "author": "Henrique Kirschke",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
