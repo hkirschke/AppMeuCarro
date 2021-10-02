@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head lang="pt-BR">
-  <title>Minha primeira PWA</title>
+  <title>Five Car</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="/pwa.webmanifest" />
@@ -25,79 +25,41 @@
       });
   </script>
 </head>
-<body class="bodyVerde">
- 
-
-  <div id="tela1" class="component">
+<body class="bodyVerde"> 
+  <div id="tela0" class="component">
     <div class="componentHeader">
       <h1 class="componentTitle">Olá, Henrique</h1>
-    </div>
-    <div class="componentHeader">
-      <p><img src="./images/IconesMeuCarro/icon-192x192.png"/></p>
-
+      <div>
+        <img id="logotipo-clientes" src="./images/IconesMeuCarro/icon-192x192.png" title="" alt="">
+      </div>
     </div> 
+    <div class="componentContent"> 
+    </div>
+  </div>
+
+  <div id="tela1" class="component"> 
     <div class="componentContent">
-      <div class="card" style="width: 18rem;">
-        <img src="./images/IconesMeuCarro/img-carro.png" class="card-img-top" alt="...">
+      <div class="card" >
+        <div class="card-header">
+          <h1 class="componentTitle">Meu Carro</h1>
+        </div>
+        <img id="imgCarro" src="./images/IconesMeuCarro/img-carro.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p id="nomCarro"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
   </div>
-
-  <div id="tela2" class="component hidden">
-    <div class="componentHeader">
-      <h1 class="componentTitle">
-        Nova tarefa
-      </h1>
-    </div>
-    <div class="componentContent">
-      <div class="field">
-        <label for="inputNovaTarefa">Tarefa:</label>
-        <input id="inputNovaTarefa" type="text" autocomplete="off" />
-      </div>
-      <div class="buttonGroup mt1 end">
-        <button id="btnCanc1" class="button quarter light">Cancelar</button>
-        <button id="btnInc" class="button quarter primary" disabled>
-          Incluir
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div id="tela3" class="component hidden">
-    <div class="componentHeader">
-      <h1 class="componentTitle">Alteração de tarefa</h1>
-    </div>
-    <div class="componentContent">
-      <div class="field">
-        <label for="inputAlteraTarefa">Tarefa:</label>
-        <input id="inputAlteraTarefa" type="text" autocomplete="off" />
-      </div>
-      <div class="buttonGroup end mt1">
-        <button id="btnCanc2" class="button quarter light">Cancelar</button>
-        <button id="btnAlt" class="button quarter primary">Alterar</button>
-      </div>
-      <div class="buttonGroup end mt3">
-        <button id="btnDel" class="button quarter danger">
-          Apagar tarefa
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 
-  <h1>Minha primeira PWA</h1>
-  <p></p><button onclick="f()">Clique aqui</button></p> -->
- 
   
-  <footer>
-    <div class="btn-group">
-      <a href="#" class="btn btn-primary active" aria-current="page">Meu Carro</a>
-      <a href="#" class="btn btn-primary">Faturas</a>
-      <a href="#" class="btn btn-primary">Contrato</a>
+  <div class="component">
+    <div class="componentContent"> 
+      <div class="buttonGroup mt1 btn-group-toggle" data-toggle="buttons">
+        <button id="btnMeuCarro" class="button btn-outline-success half primary">Meu Carro</button>
+        <button id="btnFatura" class="button btn-outline-success half primary">Faturas</button>
+        <button id="btnContrato" class="button btn-outline-success half primary">Contrato</button>
+      </div> 
     </div>
-  </footer>
+  </div>
+  
 </body>
 </html>
