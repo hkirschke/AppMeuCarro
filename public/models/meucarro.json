@@ -2,5 +2,6 @@
     "Marca": "Ford",
     "Ano": 2021,
     "Modelo": "Mustang",
-    "CondutorPrincal" : "Henrique Kirschke Alves"
+    "CondutorPrincal" : "Henrique Kirschke Alves",
+    "ImagemCarro" : "./images/IconesMeuCarro/img-carro.png"
 }

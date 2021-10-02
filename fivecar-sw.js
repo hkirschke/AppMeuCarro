@@ -13,3 +13,8 @@ self.addEventListener('fetch'), function (e)
     console.log('sw: carregando', e.request.url);
     // e.respondWith(fecth('nomearquivo'));
 }
+
+document.addEventListener('DOMContentLoaded', init, false);
+function init() {
+  console.log('empty for now')
+}
