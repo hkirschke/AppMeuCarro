@@ -1,4 +1,22 @@
-{
+[
+    {
     "Valor" : 1000,
-    "MesReferencia": 12
-}
+    "MesReferencia": 12,
+    "Status": 0
+    },
+    {
+        "Valor" : 1000,
+        "MesReferencia": 11,
+        "Status": 0
+    },
+    {
+        "Valor" : 1000,
+        "MesReferencia": 10,
+        "Status": 1
+    },
+    {
+        "Valor" : 1000,
+        "MesReferencia": 9,
+        "Status": 1
+    }
+]
