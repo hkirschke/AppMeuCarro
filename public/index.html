@@ -33,13 +33,21 @@
   
   <div id="tela1" class="component"> 
     <div class="componentContent">
-      <div class="card" >
+      <div class="card">
         <div class="card-header">
           <h1 class="componentTitle">Meu Carro</h1>
         </div>
-        <img id="imgCarro" src="./images/IconesMeuCarro/img-carro.png" class="card-img-top" alt="...">
+        <figure class="figure">
+          <img src="./images/IconesMeuCarro/img-carro.png" class="card-img-top figure-img img-fluid rounded" alt="...">
+          <!-- <figcaption class="figure-caption">A caption for the above image.</figcaption> -->
+        </figure> 
         <div class="card-body">
-          <p id="nomCarro"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="p-3 mb-2 bg-light text-dark">
+            <p id="nomCarro"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div> 
+        </div>
+        <div class="card-footer text-muted">
+          <p id="nomCondutor"class="card-text text-center">Condutor Principal: Henrique Kirschke Alves</p>
         </div>
       </div>
     </div>
@@ -52,7 +60,7 @@
           <h1 class="componentTitle">Dados da Fatura do mês</h1>
         </div> 
         <div class="card-body">
-          <p id="nomCarro"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p id="nomCarro"class="card-text"></p>
         </div>
       </div>
     </div>
