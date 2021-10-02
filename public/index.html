@@ -13,14 +13,6 @@
   <script src="./fivecar.js"></script>
   <link href="./styles/cardStyles.css" rel="stylesheet" />
   <script>
-    navigator.serviceWorker.register('/fivecar-sw.js');
-
-    // fetch('caminhoArquivo')
-    //   .then( function(res) {
-    //     return res.text();
-    //   }).then( function(conteudo){
-    //     document.getElementById('DivId').innerHTML = conteudo;
-    //   });
   </script>
 </head>
 <body class="bodyVerde">  
@@ -38,7 +30,7 @@
           <h1 class="componentTitle">Meu Carro</h1>
         </div>
         <figure class="figure">
-          <img src="./images/IconesMeuCarro/img-carro.png" class="card-img-top figure-img img-fluid rounded" alt="...">
+          <img id="idImgCarro" src="./images/IconesMeuCarro/img-carro.png" class="card-img-top figure-img img-fluid rounded" alt="...">
           <!-- <figcaption class="figure-caption">A caption for the above image.</figcaption> -->
         </figure> 
         <div class="card-body">
@@ -59,15 +51,16 @@
     <div class="componentContent">
       <div class="card widthCard" >
         <div class="card-header">
-          <h1 class="componentTitle">Dados da Fatura</h1>
+          <h1 class="componentTitle">Faturas</h1>
         </div> 
         <div class="card-body ">
-          <div class="p-3 mb-2 bg-light text-dark divRadius">
+          <div id=divFatura></div>
+          <!-- <div class="p-3 mb-2 bg-light text-dark divRadius">
             <p id="idValorFatura"class="card-text"></p>
             <p id="idMesFatura"class="card-text"></p>
             <p id="idStatus"class="card-text"></p>
-          </div>
-        </div>
+          </div>  -->
+        </div> 
       </div>
     </div>
   </div>
@@ -87,7 +80,7 @@
           </div>
         </div>
         <div class="card-footer text-muted">
-          <p id="idContratante"class="card-text text-center">Titular: Henrique Kirschke Alves</p>
+          <p id="idContratante"class="card-text text-center"></p>
         </div>
       </div>
     </div>
