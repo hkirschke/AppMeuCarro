@@ -2,6 +2,6 @@
     "Vencimento" : "2025",
     "Valor" : 1000,
     "Contratante" : "Henrique Kirschke Alves",
-    "DiaVencimentoFatura" :5 ,
+    "DiaVencimentoFatura" : 1,
     "JurosVencimento" : 2
 }
