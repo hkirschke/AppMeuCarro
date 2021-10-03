@@ -1,5 +1,7 @@
 onload = () => {
-    
+    CarregaModelMockCarro();
+    CarregaNomeTitular();
+
     document.querySelector('#btnMeuCarro').onclick = () => {
         CarregaModelMockCarro();
         ativa('tela1');
@@ -97,6 +99,16 @@ function CarregaModelMockContrato() {
         document.getElementById("idValorContrato").innerHTML = "Valor do aluguel contratado: " + contrato.Valor;
         document.getElementById("idJurosVencimento").innerHTML = "Juros vencimento da fatura: " + contrato.JurosVencimento;
         document.getElementById("idContratante").innerHTML = "Titular: " + contrato.Contratante;
+    }).catch(err => {
+       console.log(err);
+    });
+};
+
+function CarregaNomeTitular() { 
+    fetch('./models/contrato.json').then(response => {
+        return response.json();
+    }).then(contrato => {
+        document.getElementById("lblOla").innerHTML = "Olá, " + contrato.Contratante;
     }).catch(err => {
        console.log(err);
     });

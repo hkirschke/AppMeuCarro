@@ -16,11 +16,13 @@
     navigator.serviceWorker.register('./fivecar-sw.js')
       .then(reg => console.log('SW registered!', reg))
         .catch(err => console.log('Boo!', err));
+
+      
   </script>
 </head>
 <body class="bodyVerde">  
   <header class="headerBarFive">
-    <div id="lblOla" class="appName">Olá, Henrique</div>
+    <div id="lblOla" class="appName"></div>
     <div class="">
       <img id="logotipo-clientes" src="./images/IconesMeuCarro/icon-108x108.png" title="" alt="">
     </div>
