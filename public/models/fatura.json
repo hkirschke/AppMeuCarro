@@ -2,7 +2,7 @@
     {
         "Valor" : 1000,
         "MesReferencia": 12,
-        "Status": 2
+        "Status": 0
     },
     {
         "Valor" : 1000,
@@ -12,7 +12,7 @@
     {
         "Valor" : 1000,
         "MesReferencia": 10,
-        "Status": 1
+        "Status": 2
     },
     {
         "Valor" : 1000,
