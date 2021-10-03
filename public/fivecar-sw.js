@@ -12,10 +12,9 @@ self.addEventListener('fetch', function (e) {
       fetch(e.request)
       .then( function (resp) {
         if(resp.ok){
-          console.log("Fetch com sucesso");
           return resp;
         } 
-        return new Response("Erro ao realizar fetch");
+        return new Response("Erro ao realizar fetch, request: " + e.request);
       })
     );
 });

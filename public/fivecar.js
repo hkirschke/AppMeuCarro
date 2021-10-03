@@ -1,3 +1,4 @@
+//Aplica função aos elementos da página index.html
 onload = () => {
     CarregaModelMockCarro();
     CarregaNomeTitular();
@@ -24,6 +25,7 @@ const ativa = (comp) => {
     document.querySelector('#' + comp).classList.remove('hidden');
 };
 
+//Carrega informações do carro inserindo dinamicamente HTML na index.html, fonte dos dados: /meucarro.json
 function CarregaModelMockCarro() { 
     
     fetch('./models/meucarro.json').then(response => {
@@ -39,6 +41,8 @@ function CarregaModelMockCarro() {
     }); 
 };
 
+
+//Carrega a porcentagem do juros do vencimento da fatura, fonte dos dados: contrato.json
 async function getPorcentagemJuros() {
     let response = await fetch('./models/contrato.json')
     .then(res => {
@@ -48,7 +52,10 @@ async function getPorcentagemJuros() {
     });
     return response.JurosVencimento;
 };
-
+ 
+//Carrega informações da fatura e realizando o calculo caso esteja vencida
+//inserindo dinamicamente HTML na index.html
+//fonte dos dados: /fatura.json
 async function CarregaModelMockFatura() {
     let htmlFaturas = "";
     let porcJuros = await getPorcentagemJuros();
@@ -89,6 +96,7 @@ async function CarregaModelMockFatura() {
     });
 };
 
+//Carrega informações do contrato inserindo dinamicamente HTML na index.html, fonte dos dados: /contrato.json
 function CarregaModelMockContrato() {
 
     fetch('./models/contrato.json').then(response => {
@@ -104,6 +112,7 @@ function CarregaModelMockContrato() {
     });
 };
 
+//Carrega o nome do titular inserindo dinamicamente HTML na index.html, fonte dos dados: /contrato.json
 function CarregaNomeTitular() { 
     fetch('./models/contrato.json').then(response => {
         return response.json();
